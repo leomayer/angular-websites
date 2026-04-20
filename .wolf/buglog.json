@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-04-20T10:19:02.454Z",
+      "error_message": "Significant refactor of ",
+      "file": "sandra/docs/architektur-entwurf.md",
+      "root_cause": "5 lines replaced/restructured",
+      "fix": "Rewrote 20→68 lines (5 removed) | Also: # Installation; ng add @angular/ssr | Also: - run: npm ci; - run: ng test --watch=false --browsers=ChromeHead",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 3,
+      "last_seen": "2026-04-20T10:19:13.927Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-04-20T11:05:57.661Z",
+      "error_message": "Significant refactor of ",
+      "file": "sandra/docs/architektur-entwurf.md",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 8→15 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-20T11:05:57.661Z"
+    }
+  ]
+}
