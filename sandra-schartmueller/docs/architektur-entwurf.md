@@ -64,7 +64,7 @@ angular-websites/
 
 ## 5. Angular Material Theming
 
-Angular Material 19 verwendet **M3** (`mat.theme()`). Brandfarben werden als CSS-Variable-Overrides gesetzt.
+Angular Material 21 verwendet **M3** (`mat.theme()`). Brandfarben werden als CSS-Variable-Overrides gesetzt.
 
 | Rolle       | Hex       | Beschreibung      |
 |-------------|-----------|-------------------|
@@ -205,4 +205,4 @@ Besucher:          Browser → Netlify CDN → statische HTML/CSS/JS  (kein Live
 
 _Entwurf – wird bei Bedarf erweitert._
 
-_Last update: 2026-04-20 13:34:31_
+_Last update: 2026-04-20 21:10:21_

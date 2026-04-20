@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-04-20T11:36:09.135Z
-> Files: 12 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-04-20T19:10:27.850Z
+> Files: 13 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -25,6 +25,10 @@
 ## sandra-schartmueller/
 
 - `README.md` — Project documentation (~203 tok)
+
+## sandra-schartmueller/docs/
+
+- `architektur-entwurf.md` — Architektur-Entwurf (~1679 tok)
 
 ## sandra-schartmueller/src/
 
