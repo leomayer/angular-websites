@@ -1,13 +1,13 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-04-20T11:15:39.604Z
-> Files: 11 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-04-20T11:21:28.626Z
+> Files: 12 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
 - `.gitignore` — Git ignore rules (~101 tok)
 - `CLAUDE.md` — OpenWolf (~934 tok)
-- `README.md` — Project documentation (~5 tok)
+- `README.md` — Project documentation (~228 tok)
 
 ## .claude/
 
@@ -21,6 +21,10 @@
 ## .claude/skills/sandra/
 
 - `SKILL.md` — Working directory (~254 tok)
+
+## sandra-schartmueller/
+
+- `README.md` — Project documentation (~205 tok)
 
 ## sandra-schartmueller/src/
 

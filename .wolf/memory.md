@@ -23,3 +23,5 @@
 | 13:15 | Edited sandra/docs/architektur-entwurf.md | llen() → llt() | ~41 |
 | 13:15 | Edited sandra/docs/architektur-entwurf.md | 4→4 lines | ~63 |
 | 13:15 | Edited sandra/docs/architektur-entwurf.md | inline fix | ~40 |
+| 13:21 | Created README.md | — | ~243 |
+| 13:21 | Created sandra-schartmueller/README.md | — | ~219 |
