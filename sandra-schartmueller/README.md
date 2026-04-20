@@ -4,7 +4,7 @@ Angular 21 website for Sandra Schartmüller — headless WordPress + Netlify SSG
 
 **Live:** www.sandra-schartmueller.at  
 **CMS:** cms.sandra-schartmueller.at (WordPress, Helloly hosting)  
-**Architecture doc:** `../sandra/docs/architektur-entwurf.md`
+**Architecture doc:** `docs/architektur-entwurf.md`
 
 ## Stack
 

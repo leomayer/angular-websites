@@ -24,7 +24,7 @@ angular-websites/
 │   ├── src/
 │   ├── angular.json
 │   └── netlify.toml
-├── sandra/docs/            ← Architecture docs
+├── sandra-schartmueller/docs/            ← Architecture docs
 └── .gitignore
 ```
 
@@ -36,4 +36,4 @@ pnpm install
 pnpm exec ng serve
 ```
 
-See `sandra/docs/architektur-entwurf.md` for full architecture documentation.
+See `sandra-schartmueller/docs/architektur-entwurf.md` for full architecture documentation.

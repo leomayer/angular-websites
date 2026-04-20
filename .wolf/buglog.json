@@ -64,6 +64,38 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-04-20T11:12:16.621Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-04-20T11:36:06.021Z",
+      "error_message": "Wrong reference: docs should be schartmueller",
+      "file": "README.md",
+      "root_cause": "Used \"docs\" instead of \"schartmueller\"",
+      "fix": "Changed docs → schartmueller",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-20T11:36:06.021Z"
+    },
+    {
+      "id": "bug-006",
+      "timestamp": "2026-04-20T11:36:09.142Z",
+      "error_message": "Wrong reference: docs should be schartmueller",
+      "file": "CLAUDE.md",
+      "root_cause": "Used \"docs\" instead of \"schartmueller\"",
+      "fix": "Changed docs → schartmueller",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-20T11:36:09.142Z"
     }
   ]
 }

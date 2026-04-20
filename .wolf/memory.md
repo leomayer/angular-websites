@@ -25,3 +25,11 @@
 | 13:15 | Edited sandra/docs/architektur-entwurf.md | inline fix | ~40 |
 | 13:21 | Created README.md | — | ~243 |
 | 13:21 | Created sandra-schartmueller/README.md | — | ~219 |
+| 13:28 | Created sandra/docs/architektur-entwurf.md | — | ~2046 |
+| 13:30 | Created sandra/docs/architektur-entwurf.md | — | ~1781 |
+| 13:34 | Edited sandra/docs/architektur-entwurf.md | 1→3 lines | ~20 |
+| 13:34 | Edited CLAUDE.md | expanded (+7 lines) | ~92 |
+| 13:36 | Edited README.md | inline fix | ~7 |
+| 13:36 | Edited sandra-schartmueller/README.md | inline fix | ~8 |
+| 13:36 | Edited .claude/skills/sandra/SKILL.md | inline fix | ~13 |
+| 13:36 | Edited CLAUDE.md | inline fix | ~7 |

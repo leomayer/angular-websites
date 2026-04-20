@@ -137,17 +137,66 @@
       "action": "create",
       "tokens": 235,
       "at": "2026-04-20T11:21:28.632Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra/docs/architektur-entwurf.md",
+      "action": "create",
+      "tokens": 2192,
+      "at": "2026-04-20T11:28:41.284Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra/docs/architektur-entwurf.md",
+      "action": "create",
+      "tokens": 1908,
+      "at": "2026-04-20T11:30:34.602Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 22,
+      "at": "2026-04-20T11:34:36.375Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/CLAUDE.md",
+      "action": "edit",
+      "tokens": 99,
+      "at": "2026-04-20T11:34:49.146Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/README.md",
+      "action": "edit",
+      "tokens": 8,
+      "at": "2026-04-20T11:36:06.020Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/README.md",
+      "action": "edit",
+      "tokens": 8,
+      "at": "2026-04-20T11:36:07.312Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/.claude/skills/sandra/SKILL.md",
+      "action": "edit",
+      "tokens": 14,
+      "at": "2026-04-20T11:36:08.462Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/CLAUDE.md",
+      "action": "edit",
+      "tokens": 8,
+      "at": "2026-04-20T11:36:09.141Z"
     }
   ],
   "edit_counts": {
     "../../../.config/fish/functions/__bg_color.fish": 1,
     ".gitignore": 1,
-    ".claude/skills/sandra/SKILL.md": 1,
-    "sandra/docs/architektur-entwurf.md": 15,
+    ".claude/skills/sandra/SKILL.md": 2,
+    "sandra/docs/architektur-entwurf.md": 18,
     "sandra-schartmueller/src/styles/_theme.scss": 1,
     "sandra-schartmueller/src/styles/_variables.scss": 1,
     "sandra-schartmueller/src/styles.scss": 1,
-    "README.md": 1,
-    "sandra-schartmueller/README.md": 1
+    "README.md": 2,
+    "sandra-schartmueller/README.md": 2,
+    "CLAUDE.md": 2
   }
 }

@@ -20,7 +20,7 @@ All file operations, builds, and Angular CLI commands target:
 - **Stack:** Angular SSR + Angular Material + pnpm
 - **Hosting:** Netlify (build triggered via WordPress webhook)
 - **CMS:** WordPress Headless at `cms.sandra-schartmueller.at`
-- **Architecture doc:** `sandra/docs/architektur-entwurf.md`
+- **Architecture doc:** `sandra-schartmueller/docs/architektur-entwurf.md`
 
 ## Key conventions
 

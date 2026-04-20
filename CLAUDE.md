@@ -29,3 +29,10 @@ This project uses OpenWolf for context management. Read and follow .wolf/OPENWOL
   ---             
   That's all of it. MCP server mcp__timestamp__* must be installed in target project too — same tools need to exist.
 
+---
+## RULE: Document timestamps
+
+When updating any file in `sandra-schartmueller/docs/`, update the `_Last update:_` line at the bottom using the datetime from the current `end_response` call.
+
+Format: `_Last update: YYYY-MM-DD HH:MM:SS_`
+
