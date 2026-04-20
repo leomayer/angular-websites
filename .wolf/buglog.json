@@ -32,6 +32,38 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-04-20T11:05:57.661Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-04-20T11:12:00.473Z",
+      "error_message": "Incorrect value in code",
+      "file": "sandra/docs/architektur-entwurf.md",
+      "root_cause": "Had `npx ng add @angular/material`",
+      "fix": "Changed to `cd sandra-schartmueller && pnpm exec ng add @angu",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-20T11:12:00.473Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-04-20T11:12:16.620Z",
+      "error_message": "Significant refactor of ",
+      "file": "sandra/docs/architektur-entwurf.md",
+      "root_cause": "5 lines replaced/restructured",
+      "fix": "Rewrote 17→19 lines (5 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-20T11:12:16.621Z"
     }
   ]
 }

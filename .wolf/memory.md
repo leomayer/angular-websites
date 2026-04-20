@@ -13,3 +13,13 @@
 | 12:19 | Edited sandra/docs/architektur-entwurf.md | 19→22 lines | ~271 |
 | 13:05 | Edited sandra/docs/architektur-entwurf.md | expanded (+7 lines) | ~163 |
 | 13:06 | Edited sandra/docs/architektur-entwurf.md | 1→2 lines | ~49 |
+| 13:12 | Edited sandra/docs/architektur-entwurf.md | "npx ng add @angular/mater" → "cd sandra-schartmueller &" | ~27 |
+| 13:12 | Edited sandra/docs/architektur-entwurf.md | 17→19 lines | ~208 |
+| 13:12 | Edited sandra/docs/architektur-entwurf.md | 4→4 lines | ~37 |
+| 13:14 | Created sandra-schartmueller/src/styles/_theme.scss | — | ~253 |
+| 13:15 | Created sandra-schartmueller/src/styles/_variables.scss | — | ~48 |
+| 13:15 | Created sandra-schartmueller/src/styles.scss | — | ~78 |
+| 13:15 | Edited sandra/docs/architektur-entwurf.md | modified apply() | ~578 |
+| 13:15 | Edited sandra/docs/architektur-entwurf.md | llen() → llt() | ~41 |
+| 13:15 | Edited sandra/docs/architektur-entwurf.md | 4→4 lines | ~63 |
+| 13:15 | Edited sandra/docs/architektur-entwurf.md | inline fix | ~40 |

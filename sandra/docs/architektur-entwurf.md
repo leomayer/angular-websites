@@ -29,15 +29,15 @@ Das GitHub-Repository `angular-websites` enthält pro Kunde ein eigenständiges 
 
 ```
 angular-websites/
-├── sandra-schartmueller/
+├── sandra-schartmueller/          ← Angular-Projekt (erstellt)
 │   ├── src/
 │   │   ├── styles/
-│   │   │   ├── _theme.scss        ← Angular Material Theme
-│   │   │   └── _variables.scss    ← Custom Properties / CSS-Variablen
-│   │   ├── styles.scss
+│   │   │   ├── _theme.scss        ← Angular Material M3 Theme (erstellt)
+│   │   │   └── _variables.scss    ← Custom Properties / CSS-Variablen (erstellt)
+│   │   ├── styles.scss            ← Einstiegspunkt (angepasst)
 │   │   └── app/
 │   ├── angular.json
-│   └── netlify.toml
+│   └── netlify.toml               ← noch anlegen
 ├── portfolio/                     ← eigenes Portfolio (später)
 │   ├── src/
 │   ├── angular.json
@@ -45,96 +45,97 @@ angular-websites/
 └── README.md
 ```
 
+> **Hinweis:** `_theme.scss` und `_variables.scss` wurden manuell angelegt — `pnpm exec ng add @angular/material` erzeugt keine Unterordner-Struktur.
+
 ---
 
 ## 4. Angular Material Theming
 
-Jedes Kundenprojekt hat ein eigenes Theme-File unter `src/styles/_theme.scss`. Die Themes sind durch die Monorepo-Struktur vollständig voneinander isoliert.
+Jedes Kundenprojekt hat ein eigenes Theme-File unter `src/styles/_theme.scss`. Angular Material 19 verwendet **M3** (`mat.theme()`). Brandfarben werden als CSS-Variable-Overrides gesetzt.
 
 ### 4.1 Dateistruktur
 
 ```
 src/
 ├── styles/
-│   ├── _theme.scss        ← Angular Material Palette & Theme-Definition
+│   ├── _theme.scss        ← mat.theme() + Brand-Overrides
 │   └── _variables.scss    ← Projektspezifische CSS Custom Properties
-└── styles.scss            ← Einstiegspunkt, importiert _theme.scss
+└── styles.scss            ← Einstiegspunkt
 ```
 
 ### 4.2 Markenfarben
 
-| Rolle        | Hex       | Beschreibung         |
-|--------------|-----------|----------------------|
-| Hintergrund  | `#fbf3ce` | Warmes Creme-Gelb    |
-| Akzent       | `#d6c2e5` | Zartes Lavendel      |
-| Primär/Text  | `#6f191c` | Dunkles Weinrot      |
+| Rolle       | Hex       | Beschreibung       |
+|-------------|-----------|--------------------|
+| Hintergrund | `#fbf3ce` | Warmes Creme-Gelb  |
+| Akzent      | `#d6c2e5` | Zartes Lavendel    |
+| Primär/Text | `#6f191c` | Dunkles Weinrot    |
 
 ### 4.3 `_theme.scss`
 
 ```scss
 @use '@angular/material' as mat;
 
-// Weinrot-Palette (Primärfarbe)
-$wine-red: (
-  50:  #fce8e9, 100: #f7c6c7, 200: #f1a1a2, 300: #eb7b7d,
-  400: #e75e61, 500: #6f191c, 600: #671618, 700: #5c1215,
-  800: #520e11, 900: #40080b,
-  contrast: (
-    50: rgba(black, 0.87), 100: rgba(black, 0.87),
-    200: rgba(black, 0.87), 300: rgba(black, 0.87),
-    400: white, 500: white, 600: white,
-    700: white, 800: white, 900: white,
-  )
-);
+// mat.theme() seeds the M3 token system; overrides below apply brand colors.
+@mixin apply() {
+  @include mat.theme((
+    color: (
+      primary:  mat.$red-palette,
+      tertiary: mat.$violet-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
 
-// Lavendel-Palette (Akzentfarbe)
-$lavender: (
-  50:  #f5eff9, 100: #e8d8f1, 200: #d6c2e5, 300: #c5acda,
-  400: #b89ad1, 500: #ac88c8, 600: #a580c2, 700: #9b75bb,
-  800: #926bb4, 900: #8258a7,
-  contrast: (
-    50: rgba(black, 0.87), 100: rgba(black, 0.87),
-    200: rgba(black, 0.87), 300: rgba(black, 0.87),
-    400: rgba(black, 0.87), 500: rgba(black, 0.87),
-    600: white, 700: white, 800: white, 900: white,
-  )
-);
+  // Primary — Weinrot #6f191c
+  --mat-sys-primary:               #6f191c;
+  --mat-sys-on-primary:            #ffffff;
+  --mat-sys-primary-container:     #ffdad9;
+  --mat-sys-on-primary-container:  #410007;
 
-$primary: mat.define-palette($wine-red, 500);
-$accent:  mat.define-palette($lavender, 200);
-$warn:    mat.define-palette(mat.$red-palette);
+  // Secondary — Lavendel #d6c2e5
+  --mat-sys-secondary:             #7a5a85;
+  --mat-sys-on-secondary:          #ffffff;
+  --mat-sys-secondary-container:   #d6c2e5;
+  --mat-sys-on-secondary-container: #2d1a38;
 
-$theme: mat.define-light-theme((
-  color: (
-    primary: $primary,
-    accent:  $accent,
-    warn:    $warn,
-  ),
-));
-
-@include mat.all-component-themes($theme);
+  // Surface — Creme #fbf3ce
+  --mat-sys-surface:               #fbf3ce;
+  --mat-sys-surface-variant:       #f0e6ce;
+  --mat-sys-on-surface:            #6f191c;
+}
 ```
 
 ### 4.4 `_variables.scss`
 
 ```scss
+// Brand colors als plain CSS Custom Properties für Nicht-Material-Kontexte.
 :root {
   --color-background: #fbf3ce;
   --color-primary:    #6f191c;
   --color-accent:     #d6c2e5;
-}
-
-body {
-  background-color: var(--color-background);
-  color: var(--color-primary);
 }
 ```
 
 ### 4.5 `styles.scss`
 
 ```scss
-@use './styles/theme' as *;
-@use './styles/variables' as *;
+@use './styles/theme' as theme;
+@use './styles/variables';
+
+html {
+  height: 100%;
+  @include theme.apply();
+}
+
+body {
+  color-scheme: light;
+  background-color: var(--color-background);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  height: 100%;
+}
 ```
 
 ---
@@ -230,7 +231,7 @@ Angular Pre-Rendering (SSG) generiert für jede Route eine fertige HTML-Datei zu
 
 ```bash
 # Installation (bereits enthalten wenn --ssr beim ng new verwendet)
-npx ng add @angular/ssr
+cd sandra-schartmueller && pnpm exec ng add @angular/ssr
 ```
 
 ```json
@@ -371,9 +372,9 @@ git add . && git commit -m "feat: ..." && git push origin main
 
 - [x] GitHub Monorepo `angular-websites` erstellt
 - [x] Angular-Projekt initialisiert: `npx @angular/cli new sandra-schartmueller --ssr --package-manager=pnpm --routing --style=scss`
-- [ ] Angular Material installieren: `npx ng add @angular/material`
-- [ ] `_theme.scss` mit Kundenfarben befüllen (Farben definiert — siehe Abschnitt 4)
-- [ ] `_variables.scss` anlegen mit CSS Custom Properties
+- [x] Angular Material installieren: `cd sandra-schartmueller && pnpm exec ng add @angular/material`
+- [x] `_theme.scss` mit Kundenfarben befüllt (M3 CSS-Variable-Overrides — siehe Abschnitt 4)
+- [x] `_variables.scss` angelegt mit CSS Custom Properties
 - [x] WordPress auf Helloly aufsetzen, Plugins installiert (WP Webhooks, Disable Comments, Custom Login Page Customizer, Wordfence)
 - [ ] WordPress REST API testen (`/wp-json/wp/v2/`)
 - [ ] Netlify-Account erstellen, Site für `sandra-schartmueller` anlegen
