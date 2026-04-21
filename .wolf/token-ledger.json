@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-04-20T09:42:05.116Z",
   "lifetime": {
-    "total_tokens_estimated": 41,
-    "total_reads": 8,
-    "total_writes": 2,
-    "total_sessions": 3,
-    "anatomy_hits": 0,
-    "anatomy_misses": 8,
+    "total_tokens_estimated": 12924,
+    "total_reads": 27,
+    "total_writes": 27,
+    "total_sessions": 6,
+    "anatomy_hits": 7,
+    "anatomy_misses": 20,
     "repeated_reads_blocked": 0,
-    "estimated_savings_vs_bare_cli": 0
+    "estimated_savings_vs_bare_cli": 1400
   },
   "sessions": [
     {
@@ -133,6 +133,362 @@
         "writes_count": 0,
         "repeated_reads_blocked": 0,
         "anatomy_lookups": 0
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:27:26.000Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 0,
+        "reads_count": 1,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:29:39.508Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 0,
+        "reads_count": 3,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:31:18.334Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 15,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 226,
+        "reads_count": 3,
+        "writes_count": 5,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:31:51.497Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 15,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 226,
+        "reads_count": 3,
+        "writes_count": 5,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:45:27.148Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 15,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 226,
+        "reads_count": 3,
+        "writes_count": 5,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:48:57.976Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 15,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 226,
+        "reads_count": 3,
+        "writes_count": 5,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    },
+    {
+      "id": "session-2026-04-21-0918",
+      "started": "2026-04-21T07:18:00.449Z",
+      "ended": "2026-04-21T07:51:29.069Z",
+      "reads": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 1679,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+          "tokens_estimated": 68,
+          "action": "create"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 15,
+          "action": "edit"
+        },
+        {
+          "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1679,
+        "output_tokens_estimated": 226,
+        "reads_count": 3,
+        "writes_count": 5,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
       }
     }
   ],

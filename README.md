@@ -21,10 +21,10 @@ Monorepo for Angular client websites. Each subdirectory is a standalone Angular 
 ```
 angular-websites/
 ├── sandra-schartmueller/   ← Angular project
+│   ├── docs/               ← Architecture docs
 │   ├── src/
 │   ├── angular.json
 │   └── netlify.toml
-├── sandra-schartmueller/docs/            ← Architecture docs
 └── .gitignore
 ```
 

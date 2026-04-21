@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-04-20T19:10:27.850Z
-> Files: 13 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-04-21T07:30:52.048Z
+> Files: 15 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -24,11 +24,13 @@
 
 ## sandra-schartmueller/
 
+- `angular.json` — Angular CLI config: outputMode=static, SSR disabled, pnpm, scss (~675 tok)
+- `netlify.toml` — Netlify build config: Node 22, pnpm build, browser publish dir, SPA redirect (~64 tok)
 - `README.md` — Project documentation (~203 tok)
 
 ## sandra-schartmueller/docs/
 
-- `architektur-entwurf.md` — Architektur-Entwurf (~1679 tok)
+- `architektur-entwurf.md` — Architektur-Entwurf (~1706 tok)
 
 ## sandra-schartmueller/src/
 

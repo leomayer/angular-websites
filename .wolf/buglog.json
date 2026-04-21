@@ -96,6 +96,38 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-04-20T11:36:09.142Z"
+    },
+    {
+      "id": "bug-007",
+      "timestamp": "2026-04-21T07:30:37.940Z",
+      "error_message": "Incorrect value in code",
+      "file": "sandra-schartmueller/angular.json",
+      "root_cause": "Had \"server\"",
+      "fix": "Changed to \"static\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "json"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T07:30:37.940Z"
+    },
+    {
+      "id": "bug-008",
+      "timestamp": "2026-04-21T07:30:43.976Z",
+      "error_message": "Significant refactor of ",
+      "file": "sandra-schartmueller/docs/architektur-entwurf.md",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 15→16 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T07:30:43.976Z"
     }
   ]
 }

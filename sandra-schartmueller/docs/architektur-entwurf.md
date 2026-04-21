@@ -17,7 +17,7 @@ Ziel ist eine moderne, SEO-freundliche Website auf Basis von Angular mit statisc
 | Komponente  | Dienst    | Aufgabe                       | URL / Zugang                |
 |-------------|-----------|-------------------------------|-----------------------------|
 | Frontend    | Netlify   | Hosting, Build, CDN           | www.sandra-schartmueller.at |
-| Source Code | GitHub    | Versionskontrolle, CI-Trigger | github.com/angular-websites  |
+| Source Code | GitHub    | Versionskontrolle, CI-Trigger | github.com/angular-websites |
 | CMS         | WordPress | Content-Pflege (Headless)     | cms.sandra-schartmueller.at |
 | Mail        | Helloly   | E-Mail-Dienste                | MX auf Helloly              |
 
@@ -128,14 +128,15 @@ Angular Pre-Rendering (SSG) generiert für jede Route eine fertige HTML-Datei zu
   publish = "dist/sandra-schartmueller/browser"
 
 [build.environment]
-  NODE_VERSION = "20"
-  WP_API_URL   = "https://cms.sandra-schartmueller.at/wp-json/wp/v2"
+  NODE_VERSION = "22"
 
 [[redirects]]
   from   = "/*"
   to     = "/index.html"
   status = 200
 ```
+
+> **Hinweis:** `WP_API_URL` wird **nicht** in `netlify.toml` gesetzt (würde im Repository landen). Stattdessen im Netlify Dashboard unter _Site → Environment variables_ eintragen.
 
 ### 8.2 Deploy Hook einrichten
 
@@ -185,7 +186,7 @@ Besucher:          Browser → Netlify CDN → statische HTML/CSS/JS  (kein Live
 
 ### Phase 2 — Infrastruktur
 - [ ] WordPress REST API testen (`/wp-json/wp/v2/`)
-- [ ] `netlify.toml` anlegen (siehe Abschnitt 8.1)
+- [x] `netlify.toml` anlegen (siehe Abschnitt 8.1)
 - [ ] Netlify-Account erstellen, Site für `sandra-schartmueller` anlegen
 - [ ] Deploy Hook in Netlify erstellen, URL in WP Webhooks eintragen
 
@@ -205,4 +206,4 @@ Besucher:          Browser → Netlify CDN → statische HTML/CSS/JS  (kein Live
 
 _Entwurf – wird bei Bedarf erweitert._
 
-_Last update: 2026-04-20 21:10:21_
+_Last update: 2026-04-21 09:29:36_

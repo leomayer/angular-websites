@@ -3,6 +3,7 @@
 > Chronological action log. Hooks and AI append to this file automatically.
 > Old sessions are consolidated by the daemon weekly.
 | 11:48 | Created ../../../.config/fish/functions/__bg_color.fish | — | ~82 |
+| 09:29 | Created netlify.toml (Node 22, no WP_API_URL); changed outputMode server→static; updated architektur-entwurf.md | sandra-schartmueller/netlify.toml, angular.json, docs/architektur-entwurf.md | ok | ~400 |
 | 11:56 | Created .gitignore | — | ~101 |
 | 12:08 | Created .claude/skills/sandra/SKILL.md | — | ~271 |
 | 12:19 | Edited sandra/docs/architektur-entwurf.md | expanded (+48 lines) | ~454 |
@@ -51,3 +52,28 @@
 
 | Time | Action | File(s) | Outcome | ~Tokens |
 |------|--------|---------|---------|--------|
+
+## Session: 2026-04-20 21:37
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-04-20 21:58
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-04-21 09:18
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 09:30 | Created sandra-schartmueller/netlify.toml | — | ~64 |
+| 09:30 | Edited sandra-schartmueller/angular.json | inline fix | ~10 |
+| 09:30 | Edited sandra-schartmueller/docs/architektur-entwurf.md | 15→16 lines | ~115 |
+| 09:30 | Edited sandra-schartmueller/docs/architektur-entwurf.md | inline fix | ~14 |
+| 09:30 | Edited sandra-schartmueller/docs/architektur-entwurf.md | inline fix | ~10 |
+| 09:31 | Session end: 5 writes across 3 files (netlify.toml, angular.json, architektur-entwurf.md) | 3 reads | ~1905 tok |
+| 09:31 | Session end: 5 writes across 3 files (netlify.toml, angular.json, architektur-entwurf.md) | 3 reads | ~1905 tok |
+| 09:45 | Session end: 5 writes across 3 files (netlify.toml, angular.json, architektur-entwurf.md) | 3 reads | ~1905 tok |
+| 09:48 | Session end: 5 writes across 3 files (netlify.toml, angular.json, architektur-entwurf.md) | 3 reads | ~1905 tok |
+| 09:51 | Session end: 5 writes across 3 files (netlify.toml, angular.json, architektur-entwurf.md) | 3 reads | ~1905 tok |
