@@ -1,5 +1,5 @@
 import { Component, computed, effect, inject } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Meta } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 import { WordpressService } from '../core/services/wordpress.service';
 import { SeoService } from '../core/services/seo.service';
@@ -15,6 +15,7 @@ export class MaintenanceComponent {
   private wp = inject(WordpressService);
   private sanitizer = inject(DomSanitizer);
   private seo = inject(SeoService);
+  private meta = inject(Meta);
 
   private maintenanceStatus = this.wp.maintenanceModeResource();
   readonly page = this.wp.pageResource(12);
@@ -26,6 +27,8 @@ export class MaintenanceComponent {
   });
 
   constructor() {
+    this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
+
     effect(() => {
       const yoast = this.page.value()?.yoast_head_json;
       if (yoast) this.seo.setFromYoast(yoast);

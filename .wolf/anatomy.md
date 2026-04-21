@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-04-21T15:28:14.185Z
-> Files: 29 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-04-21T15:59:57.181Z
+> Files: 31 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -31,11 +31,16 @@
 
 ## sandra-schartmueller/docs/
 
-- `architektur-entwurf.md` — Architektur-Entwurf (~2146 tok)
+- `architektur-entwurf.md` — Architektur-Entwurf (~2402 tok)
+
+## sandra-schartmueller/public/
+
+- `robots.txt` (~20 tok)
+- `sitemap.xml` (~82 tok)
 
 ## sandra-schartmueller/src/
 
-- `index.html` — SandraSchartmueller (~205 tok)
+- `index.html` — SandraSchartmueller (~224 tok)
 - `styles.scss` — Styles: 4 rules (~129 tok)
 
 ## sandra-schartmueller/src/app/
@@ -58,7 +63,7 @@
 
 - `maintenance.component.html` (~109 tok)
 - `maintenance.component.scss` — Styles: 1 rules (~299 tok)
-- `maintenance.component.ts` — Exports MaintenanceComponent (~404 tok)
+- `maintenance.component.ts` — Exports MaintenanceComponent (~436 tok)
 
 ## sandra-schartmueller/src/environments/
 

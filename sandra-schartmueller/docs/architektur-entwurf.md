@@ -1,7 +1,7 @@
 # Architektur-Entwurf
 
 **Angular + WordPress Headless + Netlify**
-_Stand: April 2026 | Version 1.2 | Entwurf_
+_Stand: April 2026 | Version 1.3 | In Entwicklung_
 
 ---
 
@@ -24,7 +24,36 @@ Ziel ist eine moderne, SEO-freundliche Website auf Basis von Angular mit statisc
 
 ---
 
-## 3. Lokale Entwicklung
+## 3. Monorepo-Struktur
+
+Das GitHub-Repository `angular-websites` enthält pro Kunde ein eigenständiges Angular-Projekt als Unterverzeichnis. Jedes Projekt hat seine eigene Netlify-Konfiguration und ist vollständig isoliert.
+
+```
+angular-websites/
+├── sandra-schartmueller/
+│   ├── public/
+│   │   ├── sitemap.xml            ← 1 <url> pro öffentlicher Route
+│   │   └── robots.txt             ← referenziert Sitemap
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── core/
+│   │   │   │   ├── models/        ← WpPost, etc.
+│   │   │   │   └── services/      ← WordpressService, SeoService
+│   │   │   └── maintenance/       ← initiale Startseite (pre-launch)
+│   │   ├── environments/          ← environment.ts / environment.prod.ts
+│   │   ├── styles/
+│   │   │   ├── _theme.scss        ← Angular Material M3 Theme
+│   │   │   └── _variables.scss    ← CSS Custom Properties
+│   │   └── styles.scss
+│   ├── angular.json
+│   └── netlify.toml
+├── portfolio/                     ← eigenes Portfolio (später)
+└── README.md
+```
+
+---
+
+## 4. Lokale Entwicklung
 
 Environment-Variablen: lokal via `.env`, Netlify-Build via Netlify Environment Variables (`WP_API_URL`).
 
@@ -38,27 +67,6 @@ pnpm exec ng build && npx serve dist/sandra-schartmueller/browser
 
 # Deploy auslösen
 git add . && git commit -m "feat: ..." && git push origin main
-```
-
----
-
-## 4. Monorepo-Struktur
-
-Das GitHub-Repository `angular-websites` enthält pro Kunde ein eigenständiges Angular-Projekt als Unterverzeichnis. Jedes Projekt hat seine eigene Netlify-Konfiguration und ist vollständig isoliert.
-
-```
-angular-websites/
-├── sandra-schartmueller/
-│   ├── src/
-│   │   ├── styles/
-│   │   │   ├── _theme.scss        ← Angular Material M3 Theme
-│   │   │   └── _variables.scss    ← CSS Custom Properties
-│   │   ├── styles.scss
-│   │   └── app/
-│   ├── angular.json
-│   └── netlify.toml               ← noch anlegen
-├── portfolio/                     ← eigenes Portfolio (später)
-└── README.md
 ```
 
 ---
@@ -83,12 +91,14 @@ Einstiegspunkt → `src/styles.scss`
 
 Angular Pre-Rendering (SSG) generiert für jede Route eine fertige HTML-Datei zum Build-Zeitpunkt. Suchmaschinen-Crawler sehen sofort vollständigen Content ohne JavaScript-Ausführung.
 
-- **Title Service:** `<title>` pro Route setzen
-- **Meta Service:** `description`, `og:title`, `og:description` etc.
-- **Pre-Rendering:** bereits via `--ssr` aktiviert
-- Saubere URLs via Angular Router (kein Hash-Routing)
-- `_redirects` Datei für korrektes SPA-Routing auf Netlify
-- `sitemap.xml`: statische Datei in `/public`
+- **Pre-Rendering:** aktiviert via `--ssr`
+- **SPA-Routing:** Redirect-Regel in `netlify.toml` (`/* → /index.html`)
+- **Saubere URLs:** Angular Router, kein Hash-Routing
+- **sitemap.xml:** `public/sitemap.xml` — 1 `<url>` pro öffentlicher Angular-Route, manuell gepflegt
+- **robots.txt:** `public/robots.txt` — referenziert Sitemap, von Netlify automatisch ausgeliefert
+- **`<link rel="sitemap">`** im `<head>` von `index.html` verknüpft
+
+> **Wartung:** Bei neuer Route in `app.routes.ts` → `sitemap.xml` manuell um einen `<url>`-Block erweitern.
 
 ### 6.1 SEO aus WordPress (Yoast)
 
@@ -115,6 +125,10 @@ constructor() {
 
 > SEO-Felder werden in Yoast direkt pro Seite gepflegt — kein Code-Eingriff nötig.
 
+### 6.2 Maintenance-Seite: noindex
+
+Die Maintenance-Komponente setzt `noindex, nofollow` direkt via `Meta`-Service — strikt lokal, kein `SeoService` involviert. Beim Go-Live entfernen.
+
 ---
 
 ## 7. WordPress – Headless CMS
@@ -134,6 +148,11 @@ constructor() {
 | **Wordfence Security**           | Firewall, Malware-Scan, Brute-Force-Schutz, 2FA             |
 | **Yoast SEO**                    | SEO-Metadaten pro Page/Post, `yoast_head_json` via REST API  |
 
+**Wartungsmodus-Mechanismus:**
+- WP Page mit Slug `maintenance-mode` → published = Wartungsmodus aktiv, draft = inaktiv
+- Angular prüft beim Build via `WordpressService.maintenanceModeResource()`
+- Status wird nur in der Browser-Konsole geloggt, nicht im UI angezeigt
+
 ---
 
 ## 8. Netlify – Build, Hosting & CDN
@@ -142,6 +161,7 @@ constructor() {
 - Pro Kundenprojekt eine eigene Netlify-Site, konfiguriert auf das Unterverzeichnis
 - Build-Command: `pnpm exec ng build` (mit Pre-Rendering)
 - Publish-Directory: `dist/sandra-schartmueller/browser`
+- Alles aus `public/` wird automatisch in den Build-Output kopiert
 - Deploy Hook URL: wird von WordPress Webhook aufgerufen
 - Automatisches SSL-Zertifikat (Let's Encrypt)
 - Globales CDN
@@ -203,45 +223,40 @@ Besucher:          Browser → Netlify CDN → statische HTML/CSS/JS  (kein Live
 
 ---
 
-## Offene Punkte
+## 11. Status & Offene Punkte
 
-### Phase 1 — Angular-Entwicklung
+### Noch ausstehend
 
+**Angular-Entwicklung:**
 - [ ] Angular Routing-Struktur definieren (welche Routen?)
-- [ ] Komponenten aufbauen — **mobile-first, responsive**
-- [x] `SeoService` implementiert (`src/app/core/services/seo.service.ts`)
-- [x] Meta-Tags via Yoast + `SeoService` pro Route — Pattern etabliert
-- [ ] `sitemap.xml` generieren, in `/public` ablegen
-
-### Phase 2 — Infrastruktur
-
-- [x] WordPress REST API testen (`/wp-json/wp/v2/`)
-- [x] `netlify.toml` anlegen (siehe Abschnitt 8.1)
-- [x] Netlify-Account erstellen, Site für `sandra-schartmueller` anlegen
+- [ ] Seiten-Komponenten aufbauen — **mobile-first, responsive**
 - [ ] Deploy Hook in Netlify erstellen, URL in WP Webhooks eintragen
-
-### Phase 3 — Go-Live
-
-- [x] DNS-Einträge bei Helloly anpassen (siehe Abschnitt 9)
-- [x] SSL-Zertifikat auf Netlify verifizieren (DNS-Propagierung abwarten)
+- [ ] Sitemap bei Google Search Console einreichen (nach Go-Live)
 - [ ] End-to-End Test: WP speichern → Netlify Build → Live
 
-### Erledigt
+### Abgeschlossen
 
+**Infrastruktur:**
 - [x] GitHub Monorepo `angular-websites` erstellt
-- [x] Angular-Projekt initialisiert (`--ssr`, `--package-manager=pnpm`, `--style=scss`)
-- [x] Angular Material installiert
-- [x] Brand-Theme implementiert (M3 CSS-Variable-Overrides)
+- [x] DNS-Einträge bei Helloly angepasst
+- [x] SSL-Zertifikat auf Netlify verifiziert
 - [x] WordPress auf Helloly aufgesetzt, Plugins installiert
-- [x] `WordpressService` + `WpPost`-Model implementiert (`src/app/core/`)
-- [x] `HttpClient` mit `withFetch()` registriert (SSR-kompatibel)
+- [x] WordPress REST API getestet (`/wp-json/wp/v2/`)
+- [x] Netlify-Account erstellt, Site für `sandra-schartmueller` angelegt
+- [x] `netlify.toml` konfiguriert
+
+**Angular:**
+- [x] Angular-Projekt initialisiert (`--ssr`, `--package-manager=pnpm`, `--style=scss`)
+- [x] Angular Material + Brand-Theme implementiert (M3 CSS-Variable-Overrides)
 - [x] Environment-Dateien angelegt (`src/environments/`)
-- [x] Maintenance-Seite als initiale Startseite implementiert
-- [x] Maintenance-Seite lädt Content dynamisch aus WP Page (id=12)
-- [x] Maintenance-Modus-Flag via WP Page slug `maintenance-mode` (published = aktiv)
+- [x] `HttpClient` mit `withFetch()` registriert (SSR-kompatibel)
+- [x] `WordpressService` + `WpPost`-Model implementiert (`src/app/core/`)
+- [x] `SeoService` implementiert — Yoast-Integration, Pattern für alle Routen etabliert
+- [x] Maintenance-Seite implementiert — Content dynamisch aus WP Page (id=12)
+- [x] Wartungsmodus-Flag via WP Page slug `maintenance-mode`
+- [x] `sitemap.xml` + `robots.txt` in `public/` angelegt
+- [x] `<link rel="sitemap">` in `index.html`
 
 ---
 
-_Entwurf – wird bei Bedarf erweitert._
-
-_Last update: 2026-04-21 17:21:48_
+_Last update: 2026-04-21 17:56:25_

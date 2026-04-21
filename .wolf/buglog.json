@@ -241,6 +241,38 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-04-21T15:21:24.331Z"
+    },
+    {
+      "id": "bug-016",
+      "timestamp": "2026-04-21T15:40:49.886Z",
+      "error_message": "Incorrect value in code",
+      "file": "sandra-schartmueller/docs/architektur-entwurf.md",
+      "root_cause": "Had `/public`",
+      "fix": "Changed to `robots.txt`",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T15:40:49.886Z"
+    },
+    {
+      "id": "bug-017",
+      "timestamp": "2026-04-21T15:49:32.939Z",
+      "error_message": "Type error",
+      "file": "sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
+      "root_cause": "Missing or incorrect type annotation",
+      "fix": "Added type assertion/annotation",
+      "tags": [
+        "auto-detected",
+        "type-fix",
+        "ts"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T15:49:32.939Z"
     }
   ]
 }
