@@ -178,3 +178,33 @@
 | 17:56 | Session end: 26 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~9824 tok |
 | 17:59 | Edited sandra-schartmueller/docs/architektur-entwurf.md | 3→2 lines | ~34 |
 | 18:00 | Session end: 27 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~9860 tok |
+| 18:01 | Session end: 27 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~9860 tok |
+| 18:02 | Session end: 27 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~9860 tok |
+| 18:13 | Edited sandra-schartmueller/docs/architektur-entwurf.md | 5→7 lines | ~94 |
+| 18:13 | Edited sandra-schartmueller/docs/architektur-entwurf.md | inline fix | ~28 |
+| 18:13 | Edited sandra-schartmueller/docs/architektur-entwurf.md | inline fix | ~10 |
+| 18:13 | Session end: 30 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10000 tok |
+| 18:15 | Session end: 30 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10000 tok |
+| 18:19 | Edited sandra-schartmueller/docs/architektur-entwurf.md | reduced (-6 lines) | ~118 |
+| 18:19 | Edited sandra-schartmueller/docs/architektur-entwurf.md | 2→3 lines | ~44 |
+| 18:19 | Edited sandra-schartmueller/docs/architektur-entwurf.md | — | ~0 |
+| 18:19 | Edited sandra-schartmueller/docs/architektur-entwurf.md | inline fix | ~10 |
+| 18:19 | Session 2026-04-21: Maintenance site fully wired — SeoService (Yoast), WP page content in MaintenanceComponent, noindex, sitemap/robots.txt, deploy hook verified E2E | multiple | ok | ~8000 |
+| 18:19 | Session end: 34 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10368 tok |
+| 18:21 | Session end: 34 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10368 tok |
+| 18:25 | Session end: 34 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10368 tok |
+| 18:27 | Edited sandra-schartmueller/docs/architektur-entwurf.md | modified Branches() | ~295 |
+| 18:27 | Edited sandra-schartmueller/docs/architektur-entwurf.md | inline fix | ~10 |
+| 18:27 | Session end: 36 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10694 tok |
+| 18:27 | Session end: 36 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10694 tok |
+| 18:29 | Session end: 36 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10694 tok |
+| 18:37 | Session end: 36 writes across 10 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 10 reads | ~10694 tok |
+| 18:38 | Edited sandra-schartmueller/netlify.toml | 4→5 lines | ~46 |
+| 18:38 | Edited sandra-schartmueller/docs/architektur-entwurf.md | 5→6 lines | ~61 |
+| 18:38 | Session end: 38 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~10873 tok |
+| 18:39 | Session end: 38 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~10873 tok |
+| 18:39 | Edited sandra-schartmueller/netlify.toml | "git diff --quiet HEAD^ HE" → "git diff --quiet HEAD^ HE" | ~30 |
+| 18:39 | Edited sandra-schartmueller/docs/architektur-entwurf.md | "git diff --quiet HEAD^ HE" → "git diff --quiet HEAD^ HE" | ~30 |
+| 18:39 | Session end: 40 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~10937 tok |
+| 18:40 | Session end: 40 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~10937 tok |
+| 18:41 | Session end: 40 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~10937 tok |

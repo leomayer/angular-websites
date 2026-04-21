@@ -273,6 +273,54 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-04-21T15:49:32.939Z"
+    },
+    {
+      "id": "bug-018",
+      "timestamp": "2026-04-21T16:13:23.873Z",
+      "error_message": "Significant refactor of ",
+      "file": "sandra-schartmueller/docs/architektur-entwurf.md",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 5→7 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T16:13:23.873Z"
+    },
+    {
+      "id": "bug-019",
+      "timestamp": "2026-04-21T16:39:46.660Z",
+      "error_message": "Incorrect value in code",
+      "file": "sandra-schartmueller/netlify.toml",
+      "root_cause": "Had \"git diff --quiet HEAD^ HEAD -- .\"",
+      "fix": "Changed to \"git diff --quiet HEAD^ HEAD -- src/ angular.json ",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "toml"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T16:39:46.660Z"
+    },
+    {
+      "id": "bug-020",
+      "timestamp": "2026-04-21T16:39:50.674Z",
+      "error_message": "Incorrect value in code",
+      "file": "sandra-schartmueller/docs/architektur-entwurf.md",
+      "root_cause": "Had \"git diff --quiet HEAD^ HEAD -- .\"",
+      "fix": "Changed to \"git diff --quiet HEAD^ HEAD -- src/ angular.json ",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-21T16:39:50.674Z"
     }
   ]
 }

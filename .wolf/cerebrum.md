@@ -11,6 +11,8 @@
 
 ## Key Learnings
 
+- **WP Webhooks plugin:** No `post_publish` action exists. Only `post_updated` is used as the Netlify rebuild trigger. `post_create` intentionally skipped (drafts not in REST API).
+
 - **Project:** angular-websites
 - **HttpClient:** Must use `provideHttpClient(withFetch())` — `withFetch()` is required for SSG/SSR compatibility (uses native fetch instead of XMLHttpRequest)
 - **httpResource():** Project convention is `httpResource()` NOT `HttpClient` directly. Service exposes factory methods returning `httpResource<T>()`. Must be called in injection context (component field/constructor). URL argument MUST be a function `() => string`, never a plain string — TS2769 compile error otherwise.

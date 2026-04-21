@@ -2,6 +2,7 @@
   base    = "sandra-schartmueller"
   command = "pnpm exec ng build"
   publish = "dist/sandra-schartmueller/browser"
+  ignore  = "git diff --quiet HEAD^ HEAD -- src/ angular.json netlify.toml package.json pnpm-lock.yaml public/"
 
 [build.environment]
   NODE_VERSION = "22"

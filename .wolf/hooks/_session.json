@@ -38,8 +38,8 @@
       "first_read": "2026-04-21T15:19:19.400Z"
     },
     "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md": {
-      "count": 2,
-      "tokens": 2270,
+      "count": 3,
+      "tokens": 2454,
       "first_read": "2026-04-21T15:19:19.627Z"
     },
     "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/app.routes.ts": {
@@ -51,6 +51,11 @@
       "count": 1,
       "tokens": 205,
       "first_read": "2026-04-21T15:40:34.152Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml": {
+      "count": 1,
+      "tokens": 64,
+      "first_read": "2026-04-21T16:38:29.960Z"
     }
   },
   "files_written": [
@@ -215,6 +220,84 @@
       "action": "edit",
       "tokens": 36,
       "at": "2026-04-21T15:59:57.188Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 100,
+      "at": "2026-04-21T16:13:23.871Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 30,
+      "at": "2026-04-21T16:13:27.936Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 10,
+      "at": "2026-04-21T16:13:35.267Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 126,
+      "at": "2026-04-21T16:19:24.597Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 48,
+      "at": "2026-04-21T16:19:28.820Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 0,
+      "at": "2026-04-21T16:19:36.697Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 10,
+      "at": "2026-04-21T16:19:48.336Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 316,
+      "at": "2026-04-21T16:27:06.387Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 10,
+      "at": "2026-04-21T16:27:13.061Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+      "action": "edit",
+      "tokens": 49,
+      "at": "2026-04-21T16:38:34.678Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 66,
+      "at": "2026-04-21T16:38:39.732Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
+      "action": "edit",
+      "tokens": 32,
+      "at": "2026-04-21T16:39:46.659Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 32,
+      "at": "2026-04-21T16:39:50.673Z"
     }
   ],
   "edit_counts": {
@@ -224,14 +307,15 @@
     "sandra-schartmueller/src/app/maintenance/maintenance.component.scss": 2,
     "sandra-schartmueller/src/app/core/services/seo.service.ts": 1,
     "sandra-schartmueller/src/app/core/models/wp-post.model.ts": 1,
-    "sandra-schartmueller/docs/architektur-entwurf.md": 10,
+    "sandra-schartmueller/docs/architektur-entwurf.md": 21,
     "sandra-schartmueller/public/sitemap.xml": 1,
     "sandra-schartmueller/public/robots.txt": 1,
-    "sandra-schartmueller/src/index.html": 1
+    "sandra-schartmueller/src/index.html": 1,
+    "sandra-schartmueller/netlify.toml": 2
   },
-  "anatomy_hits": 10,
+  "anatomy_hits": 11,
   "anatomy_misses": 0,
-  "repeated_reads_warned": 3,
+  "repeated_reads_warned": 4,
   "cerebrum_warnings": 0,
-  "stop_count": 21
+  "stop_count": 37
 }
