@@ -1,0 +1,19 @@
+<main>
+  <div class="card">
+
+    @if (page.isLoading()) {
+      <p>Laden…</p>
+    } @else if (page.error()) {
+      <p>Inhalt konnte nicht geladen werden.</p>
+    } @else {
+      <h1 [innerHTML]="pageTitle()"></h1>
+      <div class="wp-content" [innerHTML]="pageContent()"></div>
+    }
+
+    <a mat-flat-button href="mailto:sandra-schartmueller@gmail.com">
+      Kontakt aufnehmen
+    </a>
+
+
+</div>
+</main>

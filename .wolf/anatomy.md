@@ -1,12 +1,13 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-04-21T07:30:52.048Z
-> Files: 15 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-04-21T15:28:14.185Z
+> Files: 29 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
 - `.gitignore` — Git ignore rules (~101 tok)
 - `CLAUDE.md` — OpenWolf (~994 tok)
+- `frontend.md` — Frontend Conventions (~877 tok)
 - `README.md` — Project documentation (~235 tok)
 
 ## .claude/
@@ -24,17 +25,45 @@
 
 ## sandra-schartmueller/
 
-- `angular.json` — Angular CLI config: outputMode=static, SSR disabled, pnpm, scss (~675 tok)
+- `angular.json` (~730 tok)
 - `netlify.toml` — Netlify build config: Node 22, pnpm build, browser publish dir, SPA redirect (~64 tok)
 - `README.md` — Project documentation (~203 tok)
 
 ## sandra-schartmueller/docs/
 
-- `architektur-entwurf.md` — Architektur-Entwurf (~1706 tok)
+- `architektur-entwurf.md` — Architektur-Entwurf (~2146 tok)
 
 ## sandra-schartmueller/src/
 
-- `styles.scss` — Styles: 2 rules (~78 tok)
+- `index.html` — SandraSchartmueller (~205 tok)
+- `styles.scss` — Styles: 4 rules (~129 tok)
+
+## sandra-schartmueller/src/app/
+
+- `app.config.ts` — App providers: Router, HttpClient(withFetch), ClientHydration (~158 tok)
+- `app.html` (~5 tok)
+- `app.routes.ts` — Exports routes (~58 tok)
+- `app.ts` — Exports App (~67 tok)
+
+## sandra-schartmueller/src/app/core/models/
+
+- `wp-post.model.ts` — Exports WpPost (~90 tok)
+
+## sandra-schartmueller/src/app/core/services/
+
+- `seo.service.ts` — Exports SeoData, SeoService (~320 tok)
+- `wordpress.service.ts` — postResource, pageResource, postsResource, maintenanceModeResource — all return httpResource<WpPost> (~281 tok)
+
+## sandra-schartmueller/src/app/maintenance/
+
+- `maintenance.component.html` (~109 tok)
+- `maintenance.component.scss` — Styles: 1 rules (~299 tok)
+- `maintenance.component.ts` — Exports MaintenanceComponent (~404 tok)
+
+## sandra-schartmueller/src/environments/
+
+- `environment.prod.ts` — Exports environment (~34 tok)
+- `environment.ts` — Exports environment (~34 tok)
 
 ## sandra-schartmueller/src/styles/
 

@@ -1,11 +1,17 @@
 {
-  "printWidth": 100,
   "singleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "semi": true,
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "arrowParens": "always",
   "overrides": [
     {
-      "files": "*.html",
+      "files": ["*.html", "*.component.html"],
       "options": {
-        "parser": "angular"
+        "parser": "angular",
+        "htmlWhitespaceSensitivity": "strict"
       }
     }
   ]

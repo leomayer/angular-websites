@@ -1,0 +1,13 @@
+# Ignore directories
+.angular/
+.wolf/
+dist/
+node_modules/
+coverage/
+
+# Ignore specific files
+*.min.js
+**/tokenizer.json
+*.spec.ts.snap
+angular.json
+package.json

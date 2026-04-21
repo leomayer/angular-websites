@@ -10,6 +10,7 @@ You are now working in the `sandra-schartmueller/` subdirectory of this monorepo
 ## Working directory
 
 All file operations, builds, and Angular CLI commands target:
+
 ```
 /home/leo/programming/github/angular-websites/sandra-schartmueller/
 ```

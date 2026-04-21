@@ -38,10 +38,10 @@ pnpm exec ng test
 
 ## Brand colors
 
-| Role | Hex |
-|--|--|
+| Role       | Hex       |
+| ---------- | --------- |
 | Background | `#fbf3ce` |
-| Primary | `#6f191c` |
-| Accent | `#d6c2e5` |
+| Primary    | `#6f191c` |
+| Accent     | `#d6c2e5` |
 
 Theme defined in `src/styles/_theme.scss`.

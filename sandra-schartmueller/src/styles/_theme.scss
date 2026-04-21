@@ -3,29 +3,31 @@
 // Sandra brand colors applied via M3 CSS variable overrides.
 // mat.theme() seeds the token system; overrides below replace the brand-relevant tokens.
 @mixin apply() {
-  @include mat.theme((
-    color: (
-      primary:  mat.$red-palette,
-      tertiary: mat.$violet-palette,
-    ),
-    typography: Roboto,
-    density: 0,
-  ));
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$red-palette,
+        tertiary: mat.$violet-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
 
   // Primary — Weinrot #6f191c
-  --mat-sys-primary:               #6f191c;
-  --mat-sys-on-primary:            #ffffff;
-  --mat-sys-primary-container:     #ffdad9;
-  --mat-sys-on-primary-container:  #410007;
+  --mat-sys-primary: #6f191c;
+  --mat-sys-on-primary: #ffffff;
+  --mat-sys-primary-container: #ffdad9;
+  --mat-sys-on-primary-container: #410007;
 
   // Secondary — Lavendel #d6c2e5
-  --mat-sys-secondary:             #7a5a85;
-  --mat-sys-on-secondary:          #ffffff;
-  --mat-sys-secondary-container:   #d6c2e5;
+  --mat-sys-secondary: #7a5a85;
+  --mat-sys-on-secondary: #ffffff;
+  --mat-sys-secondary-container: #d6c2e5;
   --mat-sys-on-secondary-container: #2d1a38;
 
   // Surface — Creme #fbf3ce
-  --mat-sys-surface:               #fbf3ce;
-  --mat-sys-surface-variant:       #f0e6ce;
-  --mat-sys-on-surface:            #6f191c;
+  --mat-sys-surface: #fbf3ce;
+  --mat-sys-surface-variant: #f0e6ce;
+  --mat-sys-on-surface: #6f191c;
 }

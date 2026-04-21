@@ -4,8 +4,8 @@ Monorepo for Angular client websites. Each subdirectory is a standalone Angular 
 
 ## Projects
 
-| Directory | Client | URL | Status |
-|--|--|--|--|
+| Directory               | Client              | URL                         | Status         |
+| ----------------------- | ------------------- | --------------------------- | -------------- |
 | `sandra-schartmueller/` | Sandra Schartmüller | www.sandra-schartmueller.at | In Entwicklung |
 
 ## Stack
