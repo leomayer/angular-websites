@@ -298,6 +298,12 @@
       "action": "edit",
       "tokens": 32,
       "at": "2026-04-21T16:39:50.673Z"
+    },
+    {
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "action": "edit",
+      "tokens": 129,
+      "at": "2026-04-21T17:01:02.383Z"
     }
   ],
   "edit_counts": {
@@ -307,7 +313,7 @@
     "sandra-schartmueller/src/app/maintenance/maintenance.component.scss": 2,
     "sandra-schartmueller/src/app/core/services/seo.service.ts": 1,
     "sandra-schartmueller/src/app/core/models/wp-post.model.ts": 1,
-    "sandra-schartmueller/docs/architektur-entwurf.md": 21,
+    "sandra-schartmueller/docs/architektur-entwurf.md": 22,
     "sandra-schartmueller/public/sitemap.xml": 1,
     "sandra-schartmueller/public/robots.txt": 1,
     "sandra-schartmueller/src/index.html": 1,
@@ -317,5 +323,5 @@
   "anatomy_misses": 0,
   "repeated_reads_warned": 4,
   "cerebrum_warnings": 0,
-  "stop_count": 37
+  "stop_count": 42
 }

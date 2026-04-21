@@ -148,6 +148,13 @@ Die Maintenance-Komponente setzt `noindex, nofollow` direkt via `Meta`-Service �
 | **Wordfence Security**           | Firewall, Malware-Scan, Brute-Force-Schutz, 2FA             |
 | **Yoast SEO**                    | SEO-Metadaten pro Page/Post, `yoast_head_json` via REST API  |
 
+**WordPress-Benutzerrollen:**
+
+| Benutzerin | Rolle          | Zweck                                                   |
+| ---------- | -------------- | ------------------------------------------------------- |
+| Sandra     | **Editor**     | Content-Pflege (Texte, Seiten) — kein Zugriff auf Plugins/Einstellungen |
+| [Admin]    | **Administrator** | Technische Verwaltung: Plugin-Updates, Einstellungen, Wordfence |
+
 **Wartungsmodus-Mechanismus:**
 - WP Page mit Slug `maintenance-mode` → published = Wartungsmodus aktiv, draft = inaktiv
 - Angular prüft beim Build via `WordpressService.maintenanceModeResource()`
