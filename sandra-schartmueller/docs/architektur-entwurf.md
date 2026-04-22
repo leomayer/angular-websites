@@ -127,7 +127,7 @@ constructor() {
 
 ### 6.2 Maintenance-Seite: noindex
 
-Die Maintenance-Komponente setzt `noindex, nofollow` direkt via `Meta`-Service — strikt lokal, kein `SeoService` involviert. Beim Go-Live entfernen.
+Die Maintenance-Komponente setzt `noindex, nofollow` via `SeoService.setRobots()` — ausschließlich für diese Komponente. Alle anderen Routen setzen keine robots-Direktive. Beim Go-Live entfällt `noindex` automatisch, sobald die Route durch eine echte Page-Komponente ersetzt wird — kein manueller Eingriff nötig.
 
 ---
 
@@ -281,11 +281,12 @@ Besucher:          Browser → Netlify CDN → statische HTML/CSS/JS  (kein Live
 - [x] `HttpClient` mit `withFetch()` registriert (SSR-kompatibel)
 - [x] `WordpressService` + `WpPost`-Model implementiert (`src/app/core/`)
 - [x] `SeoService` implementiert — Yoast-Integration, Pattern für alle Routen etabliert
-- [x] Maintenance-Seite implementiert — Content dynamisch aus WP Page (id=12)
+- [x] Maintenance-Seite implementiert — Content dynamisch aus WP Page (id=12, hardcoded)
+- [ ] WP Page id=12 auf slug-basierten Lookup migrieren (stabil bei WP-Restrukturierung)
 - [x] Wartungsmodus-Flag via WP Page slug `maintenance-mode`
 - [x] `sitemap.xml` + `robots.txt` in `public/` angelegt
 - [x] `<link rel="sitemap">` in `index.html`
 
 ---
 
-_Last update: 2026-04-21 18:27:08_
+_Last update: 2026-04-22 23:42:29_

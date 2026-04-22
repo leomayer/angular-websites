@@ -337,6 +337,38 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-04-22T20:56:38.178Z"
+    },
+    {
+      "id": "bug-022",
+      "timestamp": "2026-04-22T21:39:03.851Z",
+      "error_message": "Incorrect value in code",
+      "file": "sandra-schartmueller/docs/architektur-entwurf.md",
+      "root_cause": "Had `Meta`",
+      "fix": "Changed to `SeoService.setRobots()`",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-22T21:39:03.851Z"
+    },
+    {
+      "id": "bug-023",
+      "timestamp": "2026-04-22T21:42:25.980Z",
+      "error_message": "Wrong reference: entfernen should be entf",
+      "file": "sandra-schartmueller/docs/architektur-entwurf.md",
+      "root_cause": "Used \"entfernen\" instead of \"entf\"",
+      "fix": "Changed entfernen → entf",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-22T21:42:25.980Z"
     }
   ]
 }
