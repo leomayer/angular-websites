@@ -1,327 +1,169 @@
 {
-  "session_id": "session-2026-04-21-1519",
-  "started": "2026-04-21T13:19:55.490Z",
+  "session_id": "session-2026-04-22-2150",
+  "started": "2026-04-22T19:50:21.880Z",
   "files_read": {
     "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/services/wordpress.service.ts": {
       "count": 1,
-      "tokens": 234,
-      "first_read": "2026-04-21T14:19:16.484Z"
+      "tokens": 281,
+      "first_read": "2026-04-22T20:48:18.122Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/services/seo.service.ts": {
+      "count": 1,
+      "tokens": 320,
+      "first_read": "2026-04-22T20:48:18.465Z"
     },
     "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts": {
-      "count": 1,
-      "tokens": 218,
-      "first_read": "2026-04-21T14:19:16.728Z"
-    },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.html": {
       "count": 2,
-      "tokens": 214,
-      "first_read": "2026-04-21T14:19:17.181Z"
-    },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/models/wp-post.model.ts": {
-      "count": 1,
-      "tokens": 78,
-      "first_read": "2026-04-21T14:19:17.675Z"
-    },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/styles/_theme.scss": {
-      "count": 1,
-      "tokens": 253,
-      "first_read": "2026-04-21T14:48:55.334Z"
-    },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/styles/_variables.scss": {
-      "count": 1,
-      "tokens": 48,
-      "first_read": "2026-04-21T14:48:55.665Z"
-    },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.scss": {
-      "count": 2,
-      "tokens": 365,
-      "first_read": "2026-04-21T15:19:19.400Z"
-    },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md": {
-      "count": 3,
-      "tokens": 2454,
-      "first_read": "2026-04-21T15:19:19.627Z"
+      "tokens": 417,
+      "first_read": "2026-04-22T20:48:19.005Z"
     },
     "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/app.routes.ts": {
       "count": 1,
       "tokens": 58,
-      "first_read": "2026-04-21T15:40:20.945Z"
+      "first_read": "2026-04-22T20:48:22.763Z"
     },
-    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/index.html": {
-      "count": 1,
-      "tokens": 205,
-      "first_read": "2026-04-21T15:40:34.152Z"
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/app.config.ts": {
+      "count": 2,
+      "tokens": 158,
+      "first_read": "2026-04-22T20:48:23.300Z"
     },
     "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml": {
       "count": 1,
-      "tokens": 64,
-      "first_read": "2026-04-21T16:38:29.960Z"
+      "tokens": 94,
+      "first_read": "2026-04-22T20:48:23.532Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.html": {
+      "count": 1,
+      "tokens": 109,
+      "first_read": "2026-04-22T20:48:26.858Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/models/wp-post.model.ts": {
+      "count": 1,
+      "tokens": 90,
+      "first_read": "2026-04-22T20:48:27.170Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/environments/environment.ts": {
+      "count": 1,
+      "tokens": 34,
+      "first_read": "2026-04-22T20:48:27.581Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/index.html": {
+      "count": 1,
+      "tokens": 224,
+      "first_read": "2026-04-22T21:05:38.996Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/app.ts": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-04-22T21:05:39.886Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/app.html": {
+      "count": 1,
+      "tokens": 5,
+      "first_read": "2026-04-22T21:05:39.956Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/styles/_theme.scss": {
+      "count": 1,
+      "tokens": 253,
+      "first_read": "2026-04-22T21:05:42.441Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/styles/_variables.scss": {
+      "count": 1,
+      "tokens": 48,
+      "first_read": "2026-04-22T21:05:42.748Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/styles.scss": {
+      "count": 1,
+      "tokens": 129,
+      "first_read": "2026-04-22T21:05:43.161Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/public/robots.txt": {
+      "count": 1,
+      "tokens": 20,
+      "first_read": "2026-04-22T21:05:45.454Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/public/sitemap.xml": {
+      "count": 1,
+      "tokens": 82,
+      "first_read": "2026-04-22T21:05:45.959Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/environments/environment.prod.ts": {
+      "count": 1,
+      "tokens": 34,
+      "first_read": "2026-04-22T21:05:46.250Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.scss": {
+      "count": 1,
+      "tokens": 299,
+      "first_read": "2026-04-22T21:05:49.070Z"
+    },
+    "/home/leo/programming/github/angular-websites/sandra-schartmueller/angular.json": {
+      "count": 1,
+      "tokens": 730,
+      "first_read": "2026-04-22T21:05:49.862Z"
     }
   },
   "files_written": [
     {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/services/wordpress.service.ts",
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/app.config.ts",
       "action": "edit",
-      "tokens": 81,
-      "at": "2026-04-21T14:20:00.812Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
-      "action": "create",
-      "tokens": 330,
-      "at": "2026-04-21T14:20:07.945Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.html",
-      "action": "create",
-      "tokens": 200,
-      "at": "2026-04-21T14:20:13.858Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.html",
-      "action": "edit",
-      "tokens": 37,
-      "at": "2026-04-21T14:49:00.836Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.scss",
-      "action": "edit",
-      "tokens": 122,
-      "at": "2026-04-21T15:20:23.617Z"
+      "tokens": 191,
+      "at": "2026-04-22T20:56:16.309Z"
     },
     {
       "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/services/seo.service.ts",
       "action": "create",
-      "tokens": 320,
-      "at": "2026-04-21T15:20:30.081Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/core/models/wp-post.model.ts",
-      "action": "edit",
-      "tokens": 20,
-      "at": "2026-04-21T15:20:33.812Z"
+      "tokens": 507,
+      "at": "2026-04-22T20:56:25.981Z"
     },
     {
       "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
-      "action": "create",
-      "tokens": 404,
-      "at": "2026-04-21T15:20:40.788Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
       "action": "edit",
-      "tokens": 387,
-      "at": "2026-04-21T15:21:10.870Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 143,
-      "at": "2026-04-21T15:21:18.330Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 100,
-      "at": "2026-04-21T15:21:24.329Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 61,
-      "at": "2026-04-21T15:21:30.639Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 10,
-      "at": "2026-04-21T15:21:53.158Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.html",
-      "action": "edit",
-      "tokens": 1,
-      "at": "2026-04-21T15:27:35.719Z"
+      "tokens": 91,
+      "at": "2026-04-22T20:56:30.813Z"
     },
     {
       "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
-      "action": "create",
-      "tokens": 404,
-      "at": "2026-04-21T15:27:43.706Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.scss",
       "action": "edit",
-      "tokens": 1,
-      "at": "2026-04-21T15:28:14.191Z"
+      "tokens": 35,
+      "at": "2026-04-22T20:56:34.483Z"
     },
     {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/public/sitemap.xml",
-      "action": "create",
-      "tokens": 87,
-      "at": "2026-04-21T15:40:28.859Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/public/robots.txt",
-      "action": "create",
-      "tokens": 23,
-      "at": "2026-04-21T15:40:31.698Z"
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
+      "action": "edit",
+      "tokens": 13,
+      "at": "2026-04-22T20:56:38.177Z"
     },
     {
       "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/index.html",
       "action": "edit",
-      "tokens": 38,
-      "at": "2026-04-21T15:40:38.692Z"
+      "tokens": 122,
+      "at": "2026-04-22T21:12:05.921Z"
     },
     {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/styles/_variables.scss",
       "action": "edit",
-      "tokens": 124,
-      "at": "2026-04-21T15:40:44.979Z"
+      "tokens": 58,
+      "at": "2026-04-22T21:12:07.867Z"
     },
     {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 46,
-      "at": "2026-04-21T15:40:49.885Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
-      "action": "edit",
-      "tokens": 92,
-      "at": "2026-04-21T15:49:24.739Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
-      "action": "edit",
-      "tokens": 44,
-      "at": "2026-04-21T15:49:28.400Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.ts",
-      "action": "edit",
-      "tokens": 32,
-      "at": "2026-04-21T15:49:32.938Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
+      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/src/app/maintenance/maintenance.component.scss",
       "action": "create",
-      "tokens": 2764,
-      "at": "2026-04-21T15:56:22.898Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 10,
-      "at": "2026-04-21T15:56:29.069Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 36,
-      "at": "2026-04-21T15:59:57.188Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 100,
-      "at": "2026-04-21T16:13:23.871Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 30,
-      "at": "2026-04-21T16:13:27.936Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 10,
-      "at": "2026-04-21T16:13:35.267Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 126,
-      "at": "2026-04-21T16:19:24.597Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 48,
-      "at": "2026-04-21T16:19:28.820Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 0,
-      "at": "2026-04-21T16:19:36.697Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 10,
-      "at": "2026-04-21T16:19:48.336Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 316,
-      "at": "2026-04-21T16:27:06.387Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 10,
-      "at": "2026-04-21T16:27:13.061Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
-      "action": "edit",
-      "tokens": 49,
-      "at": "2026-04-21T16:38:34.678Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 66,
-      "at": "2026-04-21T16:38:39.732Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/netlify.toml",
-      "action": "edit",
-      "tokens": 32,
-      "at": "2026-04-21T16:39:46.659Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 32,
-      "at": "2026-04-21T16:39:50.673Z"
-    },
-    {
-      "file": "/home/leo/programming/github/angular-websites/sandra-schartmueller/docs/architektur-entwurf.md",
-      "action": "edit",
-      "tokens": 129,
-      "at": "2026-04-21T17:01:02.383Z"
+      "tokens": 143,
+      "at": "2026-04-22T21:12:13.207Z"
     }
   ],
   "edit_counts": {
-    "sandra-schartmueller/src/app/core/services/wordpress.service.ts": 1,
-    "sandra-schartmueller/src/app/maintenance/maintenance.component.ts": 6,
-    "sandra-schartmueller/src/app/maintenance/maintenance.component.html": 3,
-    "sandra-schartmueller/src/app/maintenance/maintenance.component.scss": 2,
+    "sandra-schartmueller/src/app/app.config.ts": 1,
     "sandra-schartmueller/src/app/core/services/seo.service.ts": 1,
-    "sandra-schartmueller/src/app/core/models/wp-post.model.ts": 1,
-    "sandra-schartmueller/docs/architektur-entwurf.md": 22,
-    "sandra-schartmueller/public/sitemap.xml": 1,
-    "sandra-schartmueller/public/robots.txt": 1,
+    "sandra-schartmueller/src/app/maintenance/maintenance.component.ts": 3,
     "sandra-schartmueller/src/index.html": 1,
-    "sandra-schartmueller/netlify.toml": 2
+    "sandra-schartmueller/src/styles/_variables.scss": 1,
+    "sandra-schartmueller/src/app/maintenance/maintenance.component.scss": 1
   },
-  "anatomy_hits": 11,
+  "anatomy_hits": 20,
   "anatomy_misses": 0,
-  "repeated_reads_warned": 4,
+  "repeated_reads_warned": 2,
   "cerebrum_warnings": 0,
-  "stop_count": 42
+  "stop_count": 11
 }

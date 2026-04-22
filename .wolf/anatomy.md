@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-04-21T17:01:02.376Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-04-22T21:12:13.201Z
 > Files: 31 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -40,12 +40,12 @@
 
 ## sandra-schartmueller/src/
 
-- `index.html` — SandraSchartmueller (~224 tok)
+- `index.html` — Sandra Schartmüller (~285 tok)
 - `styles.scss` — Styles: 4 rules (~129 tok)
 
 ## sandra-schartmueller/src/app/
 
-- `app.config.ts` — App providers: Router, HttpClient(withFetch), ClientHydration (~158 tok)
+- `app.config.ts` — Exports appConfig (~191 tok)
 - `app.html` (~5 tok)
 - `app.routes.ts` — Exports routes (~58 tok)
 - `app.ts` — Exports App (~67 tok)
@@ -56,14 +56,14 @@
 
 ## sandra-schartmueller/src/app/core/services/
 
-- `seo.service.ts` — Exports SeoData, SeoService (~320 tok)
+- `seo.service.ts` — Exports SeoData, SeoService (~507 tok)
 - `wordpress.service.ts` — postResource, pageResource, postsResource, maintenanceModeResource — all return httpResource<WpPost> (~281 tok)
 
 ## sandra-schartmueller/src/app/maintenance/
 
 - `maintenance.component.html` (~109 tok)
-- `maintenance.component.scss` — Styles: 1 rules (~299 tok)
-- `maintenance.component.ts` — Exports MaintenanceComponent (~436 tok)
+- `maintenance.component.scss` — Styles: 1 rules (~134 tok)
+- `maintenance.component.ts` — Exports MaintenanceComponent (~417 tok)
 
 ## sandra-schartmueller/src/environments/
 
@@ -73,7 +73,7 @@
 ## sandra-schartmueller/src/styles/
 
 - `_theme.scss` — Styles: 2 rules, 11 vars (~253 tok)
-- `_variables.scss` — Brand colors as plain CSS custom properties for non-Material contexts. (~48 tok)
+- `_variables.scss` — Brand colors as plain CSS custom properties for non-Material contexts. (~55 tok)
 
 ## sandra/docs/
 

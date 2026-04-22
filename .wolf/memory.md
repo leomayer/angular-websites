@@ -2,6 +2,7 @@
 
 > Chronological action log. Hooks and AI append to this file automatically.
 > Old sessions are consolidated by the daemon weekly.
+| 22:58 | Fix: provideAnimationsAsync + install @angular/animations; SeoService add setRobots/canonical/og_image guard; remove direct Meta from MaintenanceComponent | app.config.ts, seo.service.ts, maintenance.component.ts | ok | ~300 |
 > | 11:48 | Created ../../../.config/fish/functions/\_\_bg_color.fish | — | ~82 |
 > | 09:29 | Created netlify.toml (Node 22, no WP_API_URL); changed outputMode server→static; updated architektur-entwurf.md | sandra-schartmueller/netlify.toml, angular.json, docs/architektur-entwurf.md | ok | ~400 |
 > | 11:56 | Created .gitignore | — | ~101 |
@@ -214,3 +215,37 @@
 | 19:01 | Edited sandra-schartmueller/docs/architektur-entwurf.md | expanded (+7 lines) | ~120 |
 | 19:01 | Session end: 41 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~11066 tok |
 | 19:02 | Session end: 41 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~11066 tok |
+| 19:03 | Session end: 41 writes across 11 files (wordpress.service.ts, maintenance.component.ts, maintenance.component.html, maintenance.component.scss, seo.service.ts) | 11 reads | ~11066 tok |
+
+## Session: 2026-04-22 08:16
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-04-22 09:26
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-04-22 18:15
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-04-22 21:50
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 22:56 | Edited sandra-schartmueller/src/app/app.config.ts | added 1 import(s) | ~191 |
+| 22:56 | Created sandra-schartmueller/src/app/core/services/seo.service.ts | — | ~507 |
+| 22:56 | Edited sandra-schartmueller/src/app/maintenance/maintenance.component.ts | 5→5 lines | ~91 |
+| 22:56 | Edited sandra-schartmueller/src/app/maintenance/maintenance.component.ts | 4→3 lines | ~35 |
+| 22:56 | Edited sandra-schartmueller/src/app/maintenance/maintenance.component.ts | "robots" → "noindex, nofollow" | ~13 |
+| 22:59 | Session end: 5 writes across 3 files (app.config.ts, seo.service.ts, maintenance.component.ts) | 9 reads | ~2398 tok |
+| 23:06 | Session end: 5 writes across 3 files (app.config.ts, seo.service.ts, maintenance.component.ts) | 20 reads | ~4222 tok |
+| 23:12 | Edited sandra-schartmueller/src/index.html | 4→8 lines | ~114 |
+| 23:12 | Edited sandra-schartmueller/src/styles/_variables.scss | CSS: --color-accent-light | ~54 |
+| 23:12 | Created sandra-schartmueller/src/app/maintenance/maintenance.component.scss | — | ~134 |
+| 23:12 | Session end: 8 writes across 6 files (app.config.ts, seo.service.ts, maintenance.component.ts, index.html, _variables.scss) | 20 reads | ~4545 tok |
+| 23:17 | Session end: 8 writes across 6 files (app.config.ts, seo.service.ts, maintenance.component.ts, index.html, _variables.scss) | 20 reads | ~4545 tok |
+| 23:19 | Session end: 8 writes across 6 files (app.config.ts, seo.service.ts, maintenance.component.ts, index.html, _variables.scss) | 20 reads | ~4545 tok |
